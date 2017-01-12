@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>American Dollar $ - דולר אמריקני</key>
+	<integer>1</integer>
+	<key>Canadian Dollar $ - דולר קנדי</key>
+	<real>1.35</real>
+	<key>Israeli New Shekel ₪ - שקל חדש</key>
+	<real>3.82</real>
+	<key>Peruta - פרוטה</key>
+	<real>0.01</real>
+	<key>Kontrank - קונטרנק</key>
+	<real>0.02</real>
+	<key>Mesimas - מסימס</key>
+	<real>0.04</real>
+	<key>Isar - איסר</key>
+	<real>0.08</real>
+	<key>Dopundium - פונדיון</key>
+	<real>0.16</real>
+	<key>Ma&apos;a - מעה</key>
+	<real>0.32</real>
+	<key>Gera - גרה</key>
+	<real>0.32</real>
+	<key>Istera - אסתרה</key>
+	<real>0.96</real>
+	<key>Tarpik - טרפעיק</key>
+	<real>0.96</real>
+	<key>Dinar - דינר</key>
+	<real>1.92</real>
+	<key>Zuz - זוז</key>
+	<real>1.92</real>
+	<key>Shekel - שקל</key>
+	<real>3.84</real>
+	<key>Beka - בקע</key>
+	<real>3.84</real>
+	<key>Sela - סלע</key>
+	<real>7.68</real>
+	<key>Holy Shekel - שקל הקדוש</key>
+	<real>7.68</real>
+	<key>Golden Dinar - דינר זהב</key>
+	<integer>48</integer>
+	<key>Maneh - מנה</key>
+	<integer>192</integer>
+	<key>Talent - כיכר</key>
+	<integer>11520</integer>
+</dict>
+</plist>
