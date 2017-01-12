@@ -102,7 +102,7 @@ class AreaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     // MARK: Keyboard close function
-    //This is a function to close the keyboard
+    // This is a function to close the keyboard
     func closeKeyBoard(){
         self.view.endEditing(true)
     }
