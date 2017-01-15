@@ -91,6 +91,11 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         // We are first testing it out on inches
         // Step I
         let conversionFactorToInch = unitsLength.value(forKey: unitFromLengthVar) as! Float
+        // This if statement disables the user from putting in a nil number
+        if (amountAsFloatLength == nil) {
+            print("User has entered an invalid number.")
+            return
+        }
         let resultAsInches = amountAsFloatLength! * conversionFactorToInch
         // Step II
         let conversionFactorFromInch = unitsLength.value(forKey: unitToLengthVar) as! Float

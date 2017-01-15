@@ -25,6 +25,7 @@ class MassViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         super.viewDidLoad()
         // Setting up the delegete of the inputMass to this class
         inputMass.delegate = self
+        // This is to disable user interaction with the = sign if there is nothing in the inputMass.text
         if (inputMass.text?.isEmpty)! {
             fakeButtonMass.isUserInteractionEnabled = false
         }
@@ -90,6 +91,11 @@ class MassViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         //IV: Apply the two step conversion
         // Step I
         let conversionFactorToMass = unitsMass.value(forKey: unitFromMassVar) as! Float
+        // This if statement disables the user from putting in a nil number
+        if (amountAsFloatMass == nil) {
+            print("User has entered an invalid number.")
+            return
+        }
         let resultAsMass = amountAsFloatMass! * conversionFactorToMass
         // Step II
         let conversionFactorFromMass = unitsMass.value(forKey: unitToMassVar) as! Float

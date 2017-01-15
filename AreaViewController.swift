@@ -24,9 +24,6 @@ class AreaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         super.viewDidLoad()
         // Setting the delegete of inputArea to this class
         inputArea.delegate = self
-        if (inputArea.text?.isEmpty)! {
-            fakeButtonArea.isUserInteractionEnabled = false
-        }
         // We now want to put all of the contents from unitsListArea.plist
         // I: Get a refrence to the app bundle
         let appBundle = Bundle.main
@@ -90,6 +87,11 @@ class AreaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         //IV: Apply the two step conversion
         // Step I
         let conversionFactorToArea = unitsArea.value(forKey: unitFromAreaVar) as! Float
+        // This if statement disables the user from putting in a nil number
+        if (amountAsFloatArea == nil) {
+            print("User has entered an invalid number.")
+            return
+        }
         let resultAsArea = amountAsFloatArea! * conversionFactorToArea
         // Step II
         let conversionFactorFromArea = unitsArea.value(forKey: unitToAreaVar) as! Float

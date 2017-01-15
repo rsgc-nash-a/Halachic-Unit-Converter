@@ -97,8 +97,8 @@
 		3FAB08EA1E0AD2E500D47AA3 /* Area */ = {
 			isa = PBXGroup;
 			children = (
-				3F6EEEB61E0F000300A2F38B /* unitsListArea.plist */,
 				3FDA5AD11E0438E4008C159C /* AreaViewController.swift */,
+				3F6EEEB61E0F000300A2F38B /* unitsListArea.plist */,
 			);
 			name = Area;
 			sourceTree = "<group>";
@@ -170,6 +170,7 @@
 				TargetAttributes = {
 					3FBB9A1A1E032A7E0065AFF2 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 246NA6PU2E;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -346,7 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 246NA6PU2E;
 				INFOPLIST_FILE = "Unit Converter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -361,7 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 246NA6PU2E;
 				INFOPLIST_FILE = "Unit Converter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

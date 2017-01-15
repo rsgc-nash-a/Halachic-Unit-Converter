@@ -89,6 +89,11 @@ class VolumeViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         //IV: Apply the two step conversion
         // Step I
         let conversionFactorToVolume = unitsVolume.value(forKey: unitFromVolumeVar) as! Float
+        // This if statement disables the user from putting in a nil number
+        if (amountAsFloatVolume == nil) {
+            print("User has entered an invalid number.")
+            return
+        }
         let resultAsVolume = amountAsFloatVolume! * conversionFactorToVolume
         // Step II
         let conversionFactorFromVolume = unitsVolume.value(forKey: unitToVolumeVar) as! Float
